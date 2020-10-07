@@ -11,16 +11,7 @@
     /* height: 1000px; */
   }
 
-#home_body {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    align-content: center;
-    margin-top: 100px;
-    /* height: 1000px; */
-  }
-
-#index_body {
+body {
     display: flex;
     justify-content: center;
     align-items: center; 
