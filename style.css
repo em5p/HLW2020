@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
 
-body {
+#map_body {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -11,6 +11,24 @@ body {
     /* height: 1000px; */
   }
 
+#home_body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+    margin-top: 100px;
+    /* height: 1000px; */
+  }
+
+
+#index_body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+    margin-top: 100px;
+    /* height: 1000px; */
+  }  
 #map {
     border: 3px;
     border-color: black;
