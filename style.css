@@ -95,6 +95,7 @@ h1 {
     font-size: 25px;
     color: rgb(233, 90, 90);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 #periodt{
@@ -125,4 +126,14 @@ table {
     position: relative;
     margin-top: 325px;
     border-spacing: 5px;
+}
+
+span {
+    color: rgb(252, 88, 88);
+    font-weight: bold;
+}
+
+#resources {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 }
