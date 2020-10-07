@@ -25,29 +25,127 @@
     <div id='map'>
         <script src="map.js"></script>
     </div>
-
     <div>
         <table>
             <tr>
               <th>Friend</th>
               <th>Location</th>
               <th>Products</th>
+              <th>Action</th>
               <th>Contact</th>
             </tr>
             <tr>
               <td>Jane Doe</td>
               <td>Klaus</td>
               <td>pads, tampons</td>
-              <td><a Href = "message.html">Message Jane</a></td>
+              <td>Requesting</td>
+              <td><button class="openChatBtn" onclick="openForm()">Message Jane</button></td>
+              <!-- <td><a Href = "message.html">Message Jane</a></td> -->
             </tr>
             <tr>
               <td>Sally</td>
               <td>Culc</td>
               <td>tampons</td>
-              <td>Message Sally</td>
+              <td>Offering</td>
+              <td><button class="openChatBtn" onclick="openForm()">Message Sally</button></td>
+              <!-- <td>Message Sally</td> -->
             </tr>
           </table>
     </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      * {
+          box-sizing: border-box;
+      }
+      .openChatBtn {
+          background-color: #d8e2dc;
+          color: black;
+          padding: 5px 5px 5px 5px;
+          border: none;
+          border-radius: 5px;
+          font-size: 18px;
+          cursor: pointer;
+          opacity: 0.8;
+          height: 25px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .openChat {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 15px;
+          border: 3px solid #9c4253;
+          border-radius: 5px;
+          z-index: 9;
+      }
+      form {
+          max-width: 300px;
+          padding: 10px;
+          background-color: #f8edeb;
+
+      }
+      form textarea {
+          width: 100%;
+          font-size: 18px;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          font-weight: 500;
+          background: #ffe5d9;
+          color: rgb(0, 0, 0);
+          resize: none;
+          min-height: 200px;
+      }
+      form textarea:focus {
+          background-color: rgb(219, 255, 252);
+          outline: none;
+      }
+      form .btn {
+          background-color: #d8e2dc;
+          color: #9d8189;
+          padding: 16px 20px;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom: 10px;
+          opacity: 0.8;
+          border-radius: 5px;
+      }
+      form .close {
+          background-color: #f4acb7;
+          color: #9d8189;
+          border-radius: 5px;
+      }
+      form .btn:hover, .openChatBtn:hover {
+          opacity: 1;
+      }
+    </style>
+    <!-- <button class="openChatBtn" onclick="openForm()">Chat</button> -->
+    <div class="openChat">
+      <form>
+        <h1>Chat</h1>
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn close" onclick="closeForm()">
+        Close
+        </button>
+      </form>
+    </div>
+    <script>
+      document .querySelector(".openChatBtn") .addEventListener("click", openForm);
+      document.querySelector(".close").addEventListener("click", closeForm);
+      function openForm() {
+          document.querySelector(".openChat").style.display = "block";
+      }
+      function closeForm() {
+          document.querySelector(".openChat").style.display = "none";
+      }
+    </script>
 
 </body>
 </html>
