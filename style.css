@@ -29,10 +29,11 @@ body {
     border: 3px;
     border-color: black;
     position: absolute;
-    top: 100px;
+    top: 150px;
     bottom: 0;
     width: 50%;
     height: 50%;
+    margin-bottom: 50%;
   }
 .marker {
     background-image: url('mapbox-icon.png');
@@ -178,7 +179,7 @@ th {
 
 table {
     position: relative;
-    margin-top: 325px;
+    margin-top: 50%;
     border-spacing: 5px;
 }
 
@@ -231,6 +232,7 @@ span {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    align-items: center;
 }
 
 
