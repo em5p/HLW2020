@@ -10,7 +10,7 @@ html {
 
 #map_body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center; 
     align-content: center;
