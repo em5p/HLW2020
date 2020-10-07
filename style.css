@@ -50,7 +50,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(250, 195, 195);
+    background-color: #ffcad4;
     position: fixed;
     top: 0;
     width: 100%;
@@ -62,7 +62,7 @@ body {
 
 #navbar a {
     display: block;
-    color: white;
+    color: #9d8189;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -76,7 +76,7 @@ body {
 #form {
     border-style: solid;
     border-width: 3px;
-    border-color: black;
+    border-color: #9d8189;
     padding: 15px;
     border-radius: 5px;
 }
@@ -90,10 +90,19 @@ body {
     width: 100px;
 }
 
+#register {
+    display: flex;
+    flex-direction: row;
+}
+
+#register label {
+    width: 175px;
+}
+
 h1 {
     position: top;
     font-size: 25px;
-    color: rgb(233, 90, 90);
+    color: #9c4253;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
@@ -102,7 +111,7 @@ h1 {
     position: top;
     margin-top: 25px;
     font-size: 45px;
-    color: rgb(233, 90, 90);
+    color: #9c4253;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-weight: bold;
@@ -129,7 +138,7 @@ table {
 }
 
 span {
-    color: rgb(252, 88, 88);
+    color: #9c4253;
     font-weight: bold;
 }
 
@@ -156,6 +165,27 @@ span {
     /* justify-content: center; */
     align-items: left;
     align-content: center;
+}
+
+
+.grid_item img {
+    width: 550px;
+    object-fit: cover;
+}
+
+.grid_item {
+    border: 5px;
+    border-radius: 5px;
+    border-color: #dd929e;
+    border-style: solid;
+    padding: 10px;
+    margin: 15px;
+}
+
+.grid {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 
