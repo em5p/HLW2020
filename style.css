@@ -136,6 +136,7 @@ body {
   border-radius: 5px;
   font-size: 16px;
   margin: 15px;
+  font-family: Lucida Bright, Georgia, serif;;
 }
 
 h1 {
@@ -280,4 +281,35 @@ span {
     flex-direction: column;
 }
 
+#request {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+#request-form {
+        font-family: Lucida Bright, Georgia, serif;;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #9d8189;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 8px;
+        height: 50%;
+}
+
+#request-form label {
+    width: 500px;
+    color: #9c4253;
+    font-family: Lucida Bright, Georgia, serif;
+}
+
+#request-body {
+    display: flex;
+    flex-direction: column;
+}
