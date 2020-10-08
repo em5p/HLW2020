@@ -3,7 +3,10 @@
 
 
 html {
-    background: #f8edeb;
+
+
+
+   background: #f8edeb;
     background-image: #f8edeb;
     -webkit-font-smoothing: antialiased;
 }
@@ -86,7 +89,7 @@ body {
     border-style: solid;
     border-width: 3px;
     border-color: #9d8189;
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -133,6 +136,7 @@ body {
 }
 
 h1 {
+    padding: 30px;
     position: top;
     font-size: 50px;
     color: #9c4253;
@@ -170,7 +174,7 @@ table, th, td {
 }
 
 th, td {
-    padding: 15px;
+    padding: 50px;
 }
 
 th {
@@ -229,6 +233,14 @@ span {
 }
 
 .grid {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.faq {
+    position: absolute;
+    top: 150px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
