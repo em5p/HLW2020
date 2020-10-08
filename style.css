@@ -26,7 +26,7 @@ body {
     align-items: center; 
     align-content: center;
     margin-top: 80px;
-    /* height: 1000px; */
+    background-color: #f8edeb;;
   }  
 #map {
     border: 3px;
@@ -69,6 +69,9 @@ body {
 
 #navbar {
     float: left;
+    z-index: 1;
+    background-color: #ffcad4;
+    z-index: 1;
 }
 
 #navbar a {
@@ -136,7 +139,7 @@ body {
 }
 
 h1 {
-    padding: 30px;
+    /* padding: 30px; */
     position: top;
     font-size: 50px;
     color: #9c4253;
@@ -251,6 +254,30 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.mb-0 {
+    color: black !important;
+}
+.card {
+    background-color: #F8edeb;
+    font-family: lucida bright, georgia, serif;
+    color: black;
+}
+.card-header {
+    background-color: #9c4253;
+    font-family: Lucida Bright, Georgia, serif;
+    color: black;
+}
+
+.container {
+    background-color: #f8edeb;
+    width: 60%;
+}
+
+#faq-body {
+    display: flex;
+    flex-direction: column;
 }
 
 
